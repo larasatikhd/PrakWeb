@@ -1,0 +1,89 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Viga;
+}
+
+body {
+	background: #997f94;
+	height: 100vh; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main {
+	width: auto; /* Menghapus 'fixed' yang salah */
+	background: #ba5e5e46; 
+	padding: 25px;
+	border-radius: 15px;
+	box-shadow: 0 0 15px;
+	text-align: center; 
+}
+
+.button {
+	width: 60px; 
+	height: 60px; 
+	font-size: 30px; 
+	margin: 5px; 
+	border: none;
+	background: #bd5586;
+	color: #ffffff;
+	border-radius: 25px;
+	box-shadow: inset 2px 2px 3px #000000, 5px 5px 12px #bc75c62f;
+}
+
+.button:hover {
+	background: #973257; 
+}
+
+.btn-blue {
+	background: #5f9fa9;
+	color: #44555e;
+}
+
+.btn-blue:hover {
+	background: #447d7d; 
+}
+
+.textarea {
+	width: 250px; /* Lebar textarea */
+	box-shadow: inset 2px 2px 12px #000000, 5px 5px 12px rgba(255, 255, 255, 0.16);
+	height: 100px;
+	margin: 4px;
+	font-size: 30px; /*Ukuran font textarea*/
+	padding: 15px; /*ukuran textarea*/
+	color: #0e3b7e;
+	border-radius: 25px;
+	text-align: right;
+}
+
+/* Media Queries untuk layar lebih kecil */
+@media (max-width: 768px) {
+	.button {
+		width: 50px;
+		height: 50px;
+		font-size: 24px; /* Sesuaikan ukuran font */
+	}
+
+	.textarea {
+		width: 200px;
+		font-size: 24px; /* Ukuran font lebih kecil */
+		padding: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	.button {
+		width: 45px;
+		height: 45px;
+		font-size: 20px; /* Ukuran font lebih kecil */
+		margin: 3px;
+	}
+
+	.textarea {
+		width: 180px;
+		font-size: 20px;
+		padding: 8px;
+	}
+}
