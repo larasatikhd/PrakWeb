@@ -1,0 +1,119 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f3f3; /* Soft light background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+    gap: 30px; /* Menjaga jarak di antara elemen */
+}
+
+h2 {
+    font-size: 36px;
+    color: #ff77b5; /* Pink color */
+    margin-bottom: 20px;
+    text-align: center; /* Mengatur teks agar berada di tengah */
+}
+
+/* Form container */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* Menyentralkan form */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Memisahkan elemen dalam form */
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #ff77b5; /* Pink border on focus */
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #ff77b5; /* Pink color */
+    color: #fff;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffccff; /* Lighter pink for hover effect */
+}
+
+/* Form footer */
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-footer p {
+    font-size: 16px;
+    color: #555;
+}
+
+.form-footer a {
+    text-decoration: none;
+    color: #ff77b5;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.form-footer a:hover {
+    color: #ffccff; /* Light pink hover effect */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    form {
+        padding: 20px;
+        width: 90%;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}

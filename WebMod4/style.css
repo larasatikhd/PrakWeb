@@ -1,0 +1,302 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ff69b4;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 170px 20px;
+    background-image: url('images/acc2.webp');
+    background-size: cover;
+    background-position: center;
+    color: rgb(200, 41, 41);
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #ff69b4;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #ffb6c1;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #ff69b4;
+}
+
+.product-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#about h2 {
+    font-size: 28px;
+    color: #ff69b4;
+}
+
+#about p {
+    font-size: 18px;
+    color: #555;
+}
+
+.about-box {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Contact Us Section */
+.contact-us {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.contact-us a {
+    color: #590a0a;
+    text-decoration: none;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}
+
+/* Best Seller Section */
+.best-seller {
+    margin-top: 50px;
+}
+
+.best-sellers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.best-seller .product {
+    text-align: center;
+    width: 150px;
+    background-color: #ffffff;  
+    padding: 50px;  
+    border-radius: 10px;  
+    border: 1px solid #ddd;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.best-seller .product:hover {
+    transform: scale(1.05);  /* Slight zoom effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);  /* Stronger shadow on hover */
+}
+
+.best-seller img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.testimonial-box {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #ff69b4;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+footer .copyright {
+    margin-top: 20px;
+}
+
+/* Login/Sign Up Form Styles */
+.login-container, .signup-container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 9%;
+    padding: 10px;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffb6c1;
+}
+
+a {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
