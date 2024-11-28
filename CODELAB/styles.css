@@ -1,0 +1,43 @@
+/* Style untuk tabel */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style untuk header */
+th {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+/* Style untuk baris dan kolom */
+td {
+    padding: 20px;
+    font-size: 1em;
+}
+
+tr:nth-child(2) td {
+    background-color: lightblue;
+}
+
+tr:nth-child(3) td {
+    background-color: lightgreen;
+}
+
+tr:nth-child(4) td {
+    background-color: lightpink;
+}
+
+/* Optional: tambahkan border yang lebih tebal */
+table, th, td {
+    border: 2px solid black;
+}
+
+h2 {
+    color:rgb(25, 172, 172);
+    font-style: italic;
+}
