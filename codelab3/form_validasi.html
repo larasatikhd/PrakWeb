@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi</title>
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan ke file CSS -->
+</head>
+<body>
+    <div class="container"> <!-- Kotak background -->
+        <h2>Form Validasi</h2>
+        
+        <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" placeholder="Masukkan nama">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Masukkan email">
+        </div>
+
+        <div class="form-group">
+            <label for="alamat">Alamat Lengkap:</label>
+            <input type="text" id="alamat" placeholder="Masukkan alamat lengkap">
+        </div>
+        
+        <button onclick="validasiForm()">Daftar</button>
+    </div>
+
+    <script src="form_validasi.js"></script> <!-- Menghubungkan ke file JavaScript -->
+</body>
+</html>

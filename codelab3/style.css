@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f5f5f5; /* Latar belakang halaman */
+}
+
+.container {
+    background-color: #269255; /* Warna kotak */
+    padding: 50px; /* Ruang di dalam kotak */
+    border-radius: 10px; /* Sudut melengkung */
+    display: inline-block; /* Agar kotak mengikuti ukuran isi */
+    text-align: left;
+    width: 400px;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Jarak antar kelompok form */
+}
+
+label {
+    font-size: 16px;
+    color: #0d0d0d;
+    display: block; /* Agar label berada di atas input */
+    margin-bottom: 5px; /* Jarak antara label dan input */
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%; /* Lebar input memenuhi kontainer */
+    border-radius: 5px;
+    border: 2px solid #ccc; /* Memberikan border */
+    box-sizing: border-box; /* Menghindari padding mempengaruhi lebar */
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: black; /* Warna tombol daftar menjadi hitam */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Mengatur agar tombol melengkung */
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #333; /* Warna tombol saat hover */
+}
