@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan</title>
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan ke file CSS -->
+</head>
+<body>
+    <div class="container"> <!-- Kotak background -->
+        <h2>Penjumlahan</h2>
+        <label>Bilangan pertama</label><br>
+        <input type="number" id="angka1" placeholder="Masukkan angka pertama"><br>
+        <label>Bilangan kedua</label><br>
+        <input type="number" id="angka2" placeholder="Masukkan angka kedua"><br><br>
+        
+        <button onclick="hitung()">Jumlahkan</button>
+        <button class="reset" onclick="resetForm()">Reset</button>
+        
+        <div class="result">
+            Hasil: <span id="hasil"></span>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script> <!-- Menghubungkan ke file JavaScript -->
+</body>
+</html>
